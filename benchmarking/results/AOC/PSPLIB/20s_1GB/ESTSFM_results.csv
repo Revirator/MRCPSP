@@ -1,0 +1,6 @@
+benchmark,cpu_time,average_wall_time,average_number_of_solutions,average_number_of_decisions,average_objective_area,statuses
+j20,7.39,7.81,32,424729,332.24,"{'OPTIMAL': 441, 'SATISFIABLE': 102, 'UNKNOWN': 11}"
+j30,14.49,14.88,23,1532966,768.41,"{'OPTIMAL': 249, 'UNKNOWN': 181, 'SATISFIABLE': 119, 'UNSATISFIABLE': 14}"
+m5,9.29,9.64,30,429253,342.27,"{'OPTIMAL': 379, 'SATISFIABLE': 170, 'UNKNOWN': 9}"
+n3,3.98,4.27,27,231518,147.46,"{'OPTIMAL': 556, 'SATISFIABLE': 39, 'UNKNOWN': 5}"
+r5,6.25,6.54,26,426263,225.49,"{'OPTIMAL': 461, 'SATISFIABLE': 53, 'UNKNOWN': 32}"

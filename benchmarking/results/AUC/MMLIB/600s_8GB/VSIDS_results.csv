@@ -1,0 +1,2 @@
+benchmark,cpu_time,average_wall_time,average_number_of_solutions,average_number_of_decisions,average_objective_area,statuses
+J50,351.74581052631584,354.81,84,65916031,20824.49,"{'SATISFIABLE': 248, 'OPTIMAL': 225, 'UNKNOWN': 2}"

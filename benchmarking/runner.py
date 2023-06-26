@@ -42,7 +42,7 @@ ENV = LocalEnvironment() if not RUN_ON_CLUSTER \
 EXP_PATH = SCRIPT_DIR / "data" / "exp" if not RUN_ON_CLUSTER \
     else SCRIPT_DIR / "data" / "exp"
 
-ENCODINGS_PATH = SCRIPT_DIR.parent / "encoding/encodings" if not RUN_ON_CLUSTER \
+ENCODINGS_PATH = SCRIPT_DIR.parent / "encoding/encodings/test" if not RUN_ON_CLUSTER \
     else "/scratch/" + os.environ.get("USER") + "/encodings"
 
 PUMPKIN_PATH = SCRIPT_DIR.parent / "pumpkin" / "target" / "release" / "pumpkin" if not RUN_ON_CLUSTER \
@@ -62,7 +62,7 @@ def add_runs(experiment: Experiment):
             filename = file.split('.')[0]
             run = experiment.add_run()
             run.set_property("id", [f"{filename}"])
-            run.add_command(f"solving_{filename}", [PUMPKIN_PATH, filepath, "-t", 5])
+            run.add_command(f"solving_{filename}", [PUMPKIN_PATH, filepath, "-t", 30, "--verbose"])
 
 def runner():
     exp = SolverExperiment(environment=ENV, path=EXP_PATH)

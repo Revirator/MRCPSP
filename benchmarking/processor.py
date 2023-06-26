@@ -49,6 +49,7 @@ def process():
             df.loc[df["benchmark"] == benchmark, "number_of_solutions"] = n_solutions
             if len(objective) > 0: 
                 objective = [(0.0, objective[0][1])] + objective
+                print(objective)
                 df.loc[df["benchmark"] == benchmark, "objective_area"] = calculate_area(objective)
 
     j20_df = group_by_benchmark(df, "j20")

@@ -13,3 +13,7 @@ The MRCPSP can also be modelled as directed acyclic graph (DAG). An example of a
 The optimal schedule for the example is shown in the figure below. Each square represents an activity and the selected mode. Note that the capacity for the renewable resource is 4 and for the non-renewable - 8.
 
 ![](mrcpsp_schedule.png)
+
+# Poster
+
+![](poster.png)
